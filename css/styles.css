@@ -1,0 +1,119 @@
+:root {
+  --primary: cadetblue;
+  --secondary: #bdbdbd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+.text-color-primary {
+  color: var(--primary);
+}
+.text-color-secondary {
+  color: var(--secondary);
+}
+.foto_perfil {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.foto_trabajos {
+  max-width: 100px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.fondo_cv {
+  background-color: white;
+  min-height: 100vh;
+}
+.fondo_body {
+  background-color: var(--primary);
+}
+.tooltips {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltips .tooltiptext {
+  visibility: hidden;
+  width: 70px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  font-size: 14px;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -36px;
+}
+.atras {
+  color: white;
+  padding-left: 20px;
+}
+.tooltips .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltips:hover .tooltiptext {
+  visibility: visible;
+}
+
+.referencias {
+  background-color: var(--primary);
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.card-contact {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card-contact:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.countdown-container {
+  padding: 20px;
+  background-color: var(--primary);
+  margin-bottom: 20px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.countdown-container .number {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 20px;
+  color: #000;
+  background-color: #fff;
+  height: 90px;
+}
+
+.countdown-container .concept {
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+}
